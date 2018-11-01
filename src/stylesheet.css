@@ -1,0 +1,359 @@
+.disable-hover {
+    pointer-events: none;
+}
+
+body {
+	font-family: "Avenir";
+}
+
+a {
+	color: #664dff;
+	font-weight: medium;
+}
+
+.bold {
+	font-weight: medium;
+}
+
+.header-bar {
+	background-color: rgba(255, 255, 255, .97);
+	box-shadow: rgba(0, 0, 0, 0.1) 0pt 0pt 13pt;
+	position: fixed;
+	padding: 1em;
+	width: 100%;
+	z-index: 10;
+}
+
+.title {
+	float: left;
+	font-size: 1.5em;
+	font-weight: bold;
+	padding-left: 0.3em;
+	margin:  0em;
+	vertical-align: middle;
+	color: #474661;
+}
+
+.header-buttons {
+	color: white;
+	float: right;
+	position: relative;
+	line-height: 2em;
+	background-color: #aa43e2;
+	padding-left: 1em;
+	padding-right: 1em;
+	margin-left: 0.4em !important;
+	border-radius: 1em;
+	font-weight: bold;
+	font-size: 1.2em;
+	box-shadow: none !important;
+	/*clear: none;*/
+}
+
+.purple-grad {
+	background-image: linear-gradient(to right, #aa43e2 0%, #7969ff 100%);
+	box-shadow: rgba(146, 86, 239, 0.4) 0pt 0pt 13pt;
+	padding-left: 1em;
+}
+
+.green-grad {
+	background-image: linear-gradient(to right, #00ef87 0%, #00d6b4 100%);
+	box-shadow: rgba(0, 256, 158, 0.4) 0pt 0pt 13pt;
+	padding-left: 1em;
+}
+
+.red-grad {
+	background-image: linear-gradient(to right, #ff59b2 0%, #f0471f 100%);
+	box-shadow: rgba(247, 80, 103, 0.4) 0pt 0pt 13pt;
+	padding-left: 1em;
+}
+
+.blue-grad {
+	background-image: linear-gradient(to right, #0ed9ff 0%, #34aaff 100%);
+	box-shadow: rgba(15, 215, 255, 0.4) 0pt 0pt 13pt;
+	padding-left: 1em;
+}
+
+/*tag color*/
+
+.python {
+	background-color: #aa43e2;
+}
+
+.opencv {
+	background-color: #00e8ab;
+}
+
+.arduino {
+	background-color: #00d0ff;
+}
+
+.ios {
+	background-color: #3e98ff;
+}
+
+.swift {
+	background-color: #ff598e;
+}
+
+.networking {
+	background-color: #648191;
+}
+
+.javascript {
+	background-color: #ff9326;
+}
+
+.htmlcss {
+	background-color: #ff4a70;
+}
+
+.jailbreak {
+	background-color: #751dff;
+}
+
+.design {
+	background-color: #ff4a70;
+}
+
+/*tag color*/
+
+.color-button {
+	color: white;
+	float: right;
+	position: relative;
+	line-height: 2em;
+	vertical-align: middle;
+	background-color: #aa43e2;
+	padding-left: 1em;
+	padding-right: 1em;
+	margin-left: 0.4em;
+	margin-top: 0.5em;
+	border-radius: 1em;
+	font-weight: bold;
+	font-size: 1.2em;
+	clear: none;
+}
+
+.tag {
+	color: white;
+	float: left;
+	padding-right: 0.85em;
+	padding-left: 0.85em;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+	margin-right: 0.25em;
+	border-radius: 1em;
+	font-weight: bold;
+	font-size: 0.9em;
+	clear: none;
+}
+
+.panel-footer {
+	background-color: #fff;
+	border-style: none;
+	width: 100%;
+	height: 3em !important;
+	vertical-align: bottom;
+	position: relative;
+	display: table;
+}
+
+.panel-default {
+	background-color: rgba(255, 255, 255, 0);
+	border-style: none;
+	border-radius: 9pt;
+	padding: 0.5em;
+	overflow: hidden;
+	box-shadow: rgba(0, 0, 0, 0.15) 0pt 0pt 10pt;
+	z-index: 0;
+
+}
+
+.panel-title {
+	color: #474661;
+	line-height: 25px;
+	font-size: 2em;
+	font-weight:bolder;
+	position: relative;
+	padding: 0pt;
+	margin: 0pt;
+	float: left;
+}
+
+.panel-subtitle {
+	color: #56537a;
+	font-size: 1.3em;
+	font-weight:lighter;
+	margin: 0pt;
+	position: relative;
+	line-height: 25px;
+	top: 0pt;
+	float: right;
+	clear: none;
+	overflow: visible;
+	font-weight: normal;
+}
+
+.panel-heading {
+	position: relative;
+	height: 0px;
+	width: 100%;
+	background-color: #fff !important;
+	border-style: none;
+	align-items : center;
+	padding-bottom: 0em;
+	display: table !important;
+}
+
+.panel-body {
+	display: flex;
+}
+
+.description {
+	position: relative;
+	float: right;
+	width: 50%;
+	padding-bottom: 0em;
+	padding-top: 0em;
+	padding-left: 1.5em;
+	padding-right: 0em;
+	line-height: 1.5em;	
+}
+
+.thumbnail {
+	position: relative;
+	display: block;
+	width: 100%;
+	padding: 0em;
+	margin: 0em;
+	float: left;
+	z-index: -1;
+}
+
+.pickgradient {
+	width: 50%;
+	height: 100%;
+	display:inline-block;
+	
+	background: -moz-linear-gradient(top, rgba(158,47,249,0.2) 0%, rgba(158,47,249,0.1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(158,47,249,0.1)), color-stop(100%,rgba(158,47,249,0.2))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(158,47,249,0.2) 0%,rgba(158,47,249,0.1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(158,47,249,0.2) 0%,rgba(158,47,249,0.1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(158,47,249,0.2) 0%,rgba(158,47,249,0.1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(158,47,249,0.2) 0%,rgba(158,47,249,0.1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+		
+		border-style: none;
+		border-radius: 9pt;
+		overflow: hidden;
+}
+
+@media (min-width: 770px) {
+	.container {
+		max-width: 770px;
+	}
+}
+
+@media (min-width: 680px) {
+    .panel-subtitle{
+		float: right !important;
+		font-size: 1.65em;
+	}
+	.panel-title {
+		line-height: 25px;
+		font-size: 1.5em;
+	}
+	.thumbnail {
+		width: 100%;
+	}
+	.panel-body {
+		padding-bottom: 0.5em;
+	}
+	.pickgradient {
+		width: 50%;
+	}
+	.description {
+		width: 50%;
+		font-size: 1.2em;
+		/*padding-left: 1.5em;*/
+	}
+}
+
+@media (max-width: 530px) {
+	.buttons-bar {
+		visibility: hidden;
+		position: fixed;
+	}
+	
+    .panel-subtitle{
+		font-size: 0.9em;
+		line-height: 1.4em;
+		clear: left;
+		float: left;
+	}
+	.panel-default {
+		padding: 0.1em;
+	}
+	.panel-title {
+		line-height: 25px;
+		font-size: 1.3em;
+	}
+	.panel-heading {
+		padding-bottom: 0.5em;
+	}
+	.panel-body {
+		padding-top: 0em;
+		padding-bottom: 0em !important;
+		margin-bottom: 0em !important;
+		display: compact;
+	}
+	
+	.thumbnail {
+		width: 100%;
+	}
+	
+	.pickgradient {
+		width: 100%;
+	}
+	
+	.description {
+		clear: left;
+		float: none;
+		width: 100%;
+		padding: 0em;
+		margin: 0em;
+		padding-top: 0.5em;
+		margin-bottom: 0.5em;
+	}
+	
+	.color-button {
+		align-content: center;
+		display: table;
+		width: 100% !important;
+		text-align: center !important;
+	}
+	
+	.header-bar {
+		position: absolute;
+		height: 4em !important;
+	}
+	
+	.panel-footer {
+		/*margin-top: 0em;*/
+		padding-top: 0em;
+		padding-bottom: 1.1em;
+	}
+	
+}
+
+@media (max-width: 450px) {
+    .tag{
+		visibility: hidden;
+		padding: 0em;
+		margin: 0em;
+		overflow: hidden;
+		display: none;
+	}
+}
+
