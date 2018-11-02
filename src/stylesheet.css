@@ -305,6 +305,41 @@ h4 {
 	overflow: hidden;
 }
 
+.modal-content h3 {
+	margin-top: 0em;
+	margin-bottom: 0.4em;
+}
+
+.modal-content h4 {
+	color: #664dff;
+	padding-bottom: 0em;
+	margin-bottom: 0.3em;
+}
+
+.modal-content h1 {
+	margin-bottom: 0em;
+	margin-top: 0em;
+	font-size: 2.5em;
+}
+
+
+.modal-content p {
+	margin-left: 3em !important;*/
+}
+
+.glyphicon {
+	color: white;
+	background-color: #664dff !important;
+	font-size:0.8em !important;
+	padding-right: 0.5em !important;
+	padding-left: 0.5em !important;
+	padding-bottom: 0.5em !important;
+	padding-top: 0.5em !important;
+	border-radius: 1em;
+	margin-right: 0.5em;
+}
+
+
 @media (min-width: 770px) {
 	.container {
 		max-width: 770px;
@@ -354,6 +389,17 @@ h4 {
 	.about {
 		display: inline !important;
 		white-space: nowrap;
+	}
+	
+	.modal-content h3 {
+		margin-top: 0em !important;
+		font-size: 1.2em !important;
+	}
+	
+	.modal-content h4 {
+		color: #664dff !important;
+		padding-bottom: 0em !important;
+		margin-bottom: 0.3.4em !important;
 	}
 	
     .panel-subtitle{
@@ -410,7 +456,7 @@ h4 {
 	}
 	
 	.panel-footer {
-		/*margin-top: 0em;*/
+		/*margin-top: 0em;
 		padding-top: 0em;
 		padding-bottom: 1.1em;
 	}
