@@ -11,8 +11,48 @@ a {
 	font-weight: medium;
 }
 
-.bold {
-	font-weight: medium;
+.purple {
+	color: #664dff !important;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: white;
+}
+
+a:active {
+    color: white;
+}
+
+h1 {
+	color: #474661;
+	font-weight: bold;
+	font-size: 3em;
+	line-height: 0.5em;
+}
+
+h2 {
+	color: #474661;
+	line-height: 1em;
+	margin-bottom: 0.5em;
+}
+
+h4 {
+	color: #474661;
+	font-size: 1.8em;
+	font-weight: bold;
+	padding-bottom: 0.5em;
+}
+
+.container {
+	padding-top: 5.4em;
 }
 
 .header-bar {
@@ -52,26 +92,22 @@ a {
 
 .purple-grad {
 	background-image: linear-gradient(to right, #aa43e2 0%, #7969ff 100%);
-	box-shadow: rgba(146, 86, 239, 0.4) 0pt 0pt 13pt;
-	padding-left: 1em;
+	/*box-shadow: rgba(146, 86, 239, 0.4) 0pt 0pt 13pt;*/
 }
 
 .green-grad {
-	background-image: linear-gradient(to right, #00ef87 0%, #00d6b4 100%);
-	box-shadow: rgba(0, 256, 158, 0.4) 0pt 0pt 13pt;
-	padding-left: 1em;
+	background-image: linear-gradient(to right, #00ef87 0%, #00d6b4 101%);
+	/*box-shadow: rgba(0, 256, 158, 0.4) 0pt 0pt 13pt;*/
 }
 
 .red-grad {
 	background-image: linear-gradient(to right, #ff59b2 0%, #f0471f 100%);
-	box-shadow: rgba(247, 80, 103, 0.4) 0pt 0pt 13pt;
-	padding-left: 1em;
+	/*box-shadow: rgba(247, 80, 103, 0.4) 0pt 0pt 13pt;*/
 }
 
 .blue-grad {
 	background-image: linear-gradient(to right, #0ed9ff 0%, #34aaff 100%);
-	box-shadow: rgba(15, 215, 255, 0.4) 0pt 0pt 13pt;
-	padding-left: 1em;
+	/*box-shadow: rgba(15, 215, 255, 0.4) 0pt 0pt 13pt;*/
 }
 
 /*tag color*/
@@ -124,7 +160,7 @@ a {
 	position: relative;
 	line-height: 2em;
 	vertical-align: middle;
-	background-color: #aa43e2;
+	background-color: #gray;
 	padding-left: 1em;
 	padding-right: 1em;
 	margin-left: 0.4em;
@@ -147,6 +183,7 @@ a {
 	font-weight: bold;
 	font-size: 0.9em;
 	clear: none;
+	cursor: default;
 }
 
 .panel-footer {
@@ -173,7 +210,7 @@ a {
 .panel-title {
 	color: #474661;
 	line-height: 25px;
-	font-size: 2em;
+	font-size: 1.5em;
 	font-weight:bolder;
 	position: relative;
 	padding: 0pt;
@@ -229,6 +266,7 @@ a {
 	margin: 0em;
 	float: left;
 	z-index: -1;
+	border: hidden;
 }
 
 .pickgradient {
@@ -244,9 +282,9 @@ a {
 	background: linear-gradient(to bottom, rgba(158,47,249,0.2) 0%,rgba(158,47,249,0.1) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 		
-		border-style: none;
-		border-radius: 9pt;
-		overflow: hidden;
+	border-style: none;
+	border-radius: 0.6em;
+	overflow: hidden;
 }
 
 @media (min-width: 770px) {
@@ -281,10 +319,16 @@ a {
 }
 
 @media (max-width: 530px) {
-	.buttons-bar {
-		visibility: hidden;
-		position: fixed;
+	
+	.header-buttons {
+		line-height:2.4em;
+		padding-left: 0.8em;
+		padding-right: 0.8em;
+		margin-left: 0.3em !important;
+		border-radius: 1.5em;
+		font-size: 0.9em;
 	}
+	
 	
     .panel-subtitle{
 		font-size: 0.9em;

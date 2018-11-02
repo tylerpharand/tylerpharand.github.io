@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-	  <title>Portfolio - Tyler Pharand</title>
-	  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	  <meta charset="utf-8">
-	  <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	  
-	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	 	  
-	  <link rel="stylesheet" href="src/stylesheet.css">
+		<title>Portfolio - Tyler Pharand</title>
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		  <link rel="stylesheet" href="src/stylesheet.css">
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123752025-1"></script>
 	</head>
@@ -19,29 +17,28 @@
 		<div class="header-bar">
 			<p class="title">Tyler Pharand</p>
 			<div class="buttons-bar">
-			<a class="header-buttons red-grad" href="#">Email</a>
-			<a class="header-buttons blue-grad" href="#">LinkedIn</a>
-			<a class="header-buttons green-grad" href="#">About Me</a>
+				<a class="header-buttons red-grad" href="mailto:tylerpharand@gmail.com">Email Me</a>
+				<a class="header-buttons blue-grad" href="https://www.linkedin.com/in/tylerpharand/">LinkedIn</a>
+			
 			</div>
 		</div>
-		<br>
-		<br>
-		<br>
-		<br>
+		
 		<div class="container">
 			
 			<div>
 				<h1>Hey there,</h1>
 				<h2>Welcome to my portfolio.</h2>
-				<p>I'm an electrical engineering grad with passions for graphic design and emerging technologies. I have interests in artificial intelligence, augmented-reality and blockchain. For more information on my experience, please visit the <a href="#">About Me</a> page.</p>
-			</div>		
+				<p>I'm an electrical engineering grad with passions for graphic design and emerging technologies. I have interests in artificial intelligence, augmented-reality and blockchain. For more information on my experience, please visit the <a class="purple" href="/about.html">About Me</a> page.</p>
+			</div>
+			
+			<hr>
 
 			<h4>Projects</h4>
 			
 			<!--item-->
 			<div class="panel panel-default">			  	
 			  	<div class="panel-heading">
-					<p class="panel-title">🚘 NAV X</p>
+					<p class="panel-title">NAV X</p>
 					<p class="panel-subtitle">Augmented-Reality GPS Navigation System</p>
 				</div>
 				
@@ -64,7 +61,7 @@
 			<!--item-->
 			<div class="panel panel-default">			  	
 			  	<div class="panel-heading">
-					<p class="panel-title">🔐 Crypto Tracker</p>
+					<p class="panel-title">Crypto Tracker</p>
 					<p class="panel-subtitle">Cryptocurrency Tracker, iOS Application</p>
 				</div>
 				
@@ -87,7 +84,7 @@
 			<!--item-->
 			<div class="panel panel-default">			  	
 			  	<div class="panel-heading">
-					<p class="panel-title">🎣 Jellyphish</p>
+					<p class="panel-title">Jellyphish</p>
 					<p class="panel-subtitle">Python Script</p>
 				</div>
 				
@@ -109,7 +106,7 @@
 			<!--item-->
 			<div class="panel panel-default">			  	
 			  	<div class="panel-heading">
-					<p class="panel-title">🌍 Discovr</p>
+					<p class="panel-title">Discovr</p>
 					<p class="panel-subtitle">Web-based Travel Application</p>
 				</div>
 				
@@ -132,7 +129,7 @@
 			<!--item-->
 			<div class="panel panel-default">			  	
 			  	<div class="panel-heading">
-					<p class="panel-title">🥕 Carrots</p>
+					<p class="panel-title">Carrots</p>
 					<p class="panel-subtitle">Python Script</p>
 				</div>
 				
@@ -154,7 +151,7 @@
 			<!--item-->
 			<div class="panel panel-default">			  	
 			  	<div class="panel-heading">
-					<p class="panel-title">🔦 Limelight</p>
+					<p class="panel-title">Limelight</p>
 					<p class="panel-subtitle">iOS Theme</p>
 				</div>
 				
@@ -173,8 +170,27 @@
 				</div>
 			</div>
 			<!--item-->
-		
 		</div> <!--container-->
+
+		<!-- Modal HTML -->
+		<div id="myModal" class="modal fade">
+		    <div class="modal-dialog">
+		        <div class="modal-content">
+		            <div class="modal-header">
+		                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		                <h4 class="modal-title">Confirmation</h4>
+		            </div>
+		            <div class="modal-body">
+		                <p>Do you want to save changes you made to document before closing?</p>
+		                <p class="text-warning"><small>If you don't save, your changes will be lost.</small></p>
+		            </div>
+		            <div class="modal-footer">
+		                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		                <button type="button" class="btn btn-primary">Save changes</button>
+		            </div>
+		        </div>
+		    </div>
+		</div>
 
 	</body>
 </html>
