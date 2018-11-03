@@ -429,7 +429,7 @@ h4 {
 		padding-top: 0em;
 		padding-bottom: 0em !important;
 		margin-bottom: 0em !important;
-		display: compact;
+		display: inherit;
 	}
 	
 	.thumbnail {
@@ -441,13 +441,14 @@ h4 {
 	}
 	
 	.description {
-		clear: left;
-		float: none;
+		/*clear: left;*/
+		/*float: left !important;*/
+		
 		width: 100%;
 		padding: 0em;
 		margin: 0em;
 		padding-top: 0.5em;
-		margin-bottom: 0.5em;
+		margin-bottom: 0.5em;		
 	}
 	
 	.color-button {
