@@ -179,6 +179,10 @@ a {
 	color: #7969ff !important;
 }
 
+.blue {
+	color: #34aaff !important;
+}
+
 a:link {
     color: white;
 }
@@ -226,10 +230,6 @@ h4 {
 	padding-top: 0.2;
 }
 
-.container {
-	/*padding-top: 5.4em;*/
-}
-
 #Projects {
 	padding-top: 5.4em;
 }
@@ -239,9 +239,11 @@ h4 {
 }
 
 #footer {
-	padding-top: 60em;
+	padding-top: 10em;
 	padding-bottom: 1em;
-	text-align: center;
+	padding-left: 2em;
+	padding-right: 2em;
+	font-size: 1.2em;
 }
 
 .header-bar {
@@ -554,6 +556,9 @@ h4 {
 }
 
 @media (max-width: 550px) {
+	#footer {
+		padding-top: 3em;
+	}
 	
 	.skill-item {
 		padding-right: 0em;
