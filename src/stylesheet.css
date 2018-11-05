@@ -1,26 +1,30 @@
 .skill-container {
-	width: 50%;
+	width: 100%;
 	height: 20em;
-	padding: 0.5em;
 	display: flex;
 }
 
 .skill-column {
-	width: 100%;
+	width: 50%;
 	display: table;
-	padding: 0em;
-	margin-right: 2em;
+	padding-left: 1em;
+	padding-right: 1em;
 }
 
 .skill-column h3 {
-	margin-left: 4em;
+	margin-top: 0.5em;
+	margin-bottom: 0.3em;
+	margin-left: 3.9em;
 	font-weight: bold;
 	font-size: 1.5em;
 	clear: right;
+	color: #474661;
+	color: #574dba;
 }
 
 .skill-item {
-	padding-right: 2em;
+	padding-right: 1em;
+	padding-left: 1em;
 	display : inline-table;
 	width: 100%;
 }
@@ -33,13 +37,14 @@
 	text-align: right;
 	width: 7em;
 	display: marker;
+	color: #474661;
 }
 
 .skill-ranking {
 	min-width: 1em;
 	width: 100%;
 	height: 1em;
-	background-color: #d8d2fd;
+	background-color: #eadafd;
 	border-radius: 1em;
 	display: table-cell;
 	float: /*right*/;
@@ -49,8 +54,8 @@ div.skill-ranking-fill {
 	height: 100%;
 	width: 100%;
 	border-radius: 20em;
-	background-image: linear-gradient(to right, #aa43e2 0%, #7969ff 100%);
-	background-color: #7d66fd;
+	background-image: linear-gradient(to right, #7969ff 0%, #bd89fd 100%);
+	background-color: #;
 }
 
 .p100 {
@@ -170,7 +175,7 @@ a {
 }
 
 .purple {
-	color: #664dff !important;
+	color: #7969ff !important;
 }
 
 a:link {
@@ -271,26 +276,20 @@ h4 {
 }
 
 .purple-grad {
-	background-image: linear-gradient(to right, #aa43e2 0%, #7969ff 100%);
-	/*box-shadow: rgba(146, 86, 239, 0.4) 0pt 0pt 13pt;*/
+	background-image: linear-gradient(to right, #7969ff 0%, #bd89fd 100%);
 }
 
 .green-grad {
 	background-image: linear-gradient(to right, #00ef87 0%, #00d6b4 101%);
-	/*box-shadow: rgba(0, 256, 158, 0.4) 0pt 0pt 13pt;*/
 }
 
 .red-grad {
 	background-image: linear-gradient(to right, #ff59b2 0%, #f0471f 100%);
-	/*box-shadow: rgba(247, 80, 103, 0.4) 0pt 0pt 13pt;*/
 }
 
 .blue-grad {
-	background-image: linear-gradient(to right, #0ed9ff 0%, #34aaff 100%);
-	/*box-shadow: rgba(15, 215, 255, 0.4) 0pt 0pt 13pt;*/
+	background-image: linear-gradient(to right, #34aaff 0%, #0ed9ff 100%);
 }
-
-/*tag color*/
 
 .python {
 	background-color: #aa43e2;
@@ -566,8 +565,12 @@ h4 {
 	
 	.skill-column h3 {
 		margin-left: 0em;
-		font-size: 1.4em;
+		font-size: 1.2em;
 		clear: right;
+	}
+	
+	.skill-column {
+		width: 100%;
 	}
 	
 	.skill-container {
@@ -663,9 +666,6 @@ h4 {
 	}
 	
 	.description {
-		/*clear: left;*/
-		/*float: left !important;*/
-		
 		width: 100%;
 		padding: 0em;
 		margin: 0em;
