@@ -1,3 +1,160 @@
+.skill-container {
+	width: 50%;
+	height: 20em;
+	padding: 0.5em;
+	display: flex;
+}
+
+.skill-column {
+	width: 100%;
+	display: table;
+	/*border-style: solid;*/
+	padding: 0em;
+	margin-right: 1em;
+	margin-left: 1em;
+}
+
+.skill-item {
+	padding: 0.3em;
+	display : inline-table;
+	float: right;
+}
+
+.skill-column h3 {
+	margin-right: 0.3em;
+	font-weight: bold;
+	font-size: 1.5em;
+	clear: right;
+}
+
+.skill-ranking {
+	width: 10em;
+	height: 1em;
+	background-color: #d8d2fd;
+	border-radius: 1em;
+	display: table-cell;
+	float: right;
+}
+
+div.skill-ranking-fill {
+	height: 100%;
+	width: 100%;
+	border-radius: 1em;
+	background-image: linear-gradient(to right, #aa43e2 0%, #7969ff 100%);
+	background-color: #7d66fd;
+}
+
+.p100 {
+	width: 100% !important;
+}
+
+.p90 {
+	width: 90% !important;
+}
+
+.p80 {
+	width: 80% !important;
+}
+
+.p70 {
+	width: 70% !important;
+}
+
+.p60 {
+	width: 60% !important;
+}
+
+.p50 {
+	width: 50% !important;
+}
+
+.p40 {
+	width: 40% !important;
+}
+
+.p30 {
+	width: 30% !important;
+}
+
+.p20 {
+	width: 20% !important;
+}
+
+.p10 {
+	width: 10% !important;
+}
+
+.p0 {
+	width: 0% !important;
+}
+
+.skill-item h5 {
+	margin: 0em;
+	padding-right: 0.6em;
+	display: table-cell;
+	font-size: 1em;
+	vertical-align: middle;
+}
+
+.about-item {
+	display : flex;
+	align-items : center;
+	margin-bottom: 1.5em;
+	margin-top: 1.5em;
+}
+
+.about-icon {
+	height: 3.3em;
+	padding: 0.3em;
+	width: 3em;
+	display: flex;
+	vertical-align: middle;	
+	align-content: center;
+}
+
+.about-icon img {
+	height: 100%;
+	/*width: 100%;*/
+}
+
+.about-description {
+	padding-left: 1.2em;
+	width: 100%;
+}
+
+.about-description h3 {
+	margin-top: 0em;
+	font-weight: bold;
+	font-size: 1.3em;
+	color: #574dba;
+}
+
+.about-description h5 {
+	margin-bottom: 0em;
+}
+
+
+.date {
+	white-space: nowrap;
+	align-self: stretch;
+
+}
+
+.date h5 {
+	font-size: 1em;
+	color: #6f6f84;
+	padding: 0em !important;
+	margin: 0em;
+	margin-top: 0.3em;
+}
+
+h6 {
+	/*color: red;*/
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #474661;
+}
+
 .disable-hover {
     pointer-events: none;
 }
@@ -8,7 +165,7 @@ body {
 
 a {
 	color: #664dff;
-	font-weight: medium;
+	font-weight: bold;
 }
 
 .purple {
@@ -21,10 +178,12 @@ a:link {
 
 a:visited {
     color: white;
+	text-decoration: none;
 }
 
 a:hover {
     color: white;
+	text-decoration: none;
 }
 
 a:active {
@@ -61,7 +220,21 @@ h4 {
 }
 
 .container {
+	/*padding-top: 5.4em;*/
+}
+
+#Projects {
 	padding-top: 5.4em;
+}
+
+#About {
+	padding-top: 5.4em;
+}
+
+#footer {
+	padding-top: 60em;
+	padding-bottom: 1em;
+	text-align: center;
 }
 
 .header-bar {
@@ -71,16 +244,17 @@ h4 {
 	padding: 1em;
 	width: 100%;
 	z-index: 10;
+	display : inline-table;
+	align-items : center;
 }
 
 .title {
-	float: left;
 	font-size: 1.5em;
 	font-weight: bold;
 	padding-left: 0.3em;
-	margin:  0em;
 	vertical-align: middle;
 	color: #474661;
+	display: table-cell;
 }
 
 .header-buttons {
@@ -88,15 +262,11 @@ h4 {
 	float: right;
 	position: relative;
 	line-height: 2em;
-	background-color: #aa43e2;
 	padding-left: 1em;
 	padding-right: 1em;
-	margin-left: 0.4em !important;
+	margin-left: 0.4em;
 	border-radius: 1em;
-	font-weight: bold;
 	font-size: 1.2em;
-	box-shadow: none !important;
-	/*clear: none;*/
 }
 
 .purple-grad {
@@ -354,7 +524,7 @@ h4 {
 }
 
 @media (min-width: 680px) {
-    .panel-subtitle{
+	.panel-subtitle{
 		float: right !important;
 		font-size: 1.65em;
 	}
@@ -383,6 +553,37 @@ h4 {
 }
 
 @media (max-width: 550px) {
+	.date {
+		font-size: 0.8em;
+		padding-left: 1em;
+	}
+	
+	.about-icon {
+		display: none;
+	}
+	
+	.about-description {
+		padding-left: 0em;
+	}
+	
+	.about-item {
+		margin-bottom: 1.7em;
+		margin-top: 1em;
+	}
+	
+	.about-description h3 {
+		font-size: 1.1em;
+		margin-bottom: 0.4em;
+	}
+	
+	.about-description h5 {
+		margin-top: 0em;
+		font-size: 0.9em;
+	}
+	
+	#About {
+		padding-top: 1em;
+	}
 	
 	.header-buttons {
 		line-height:2.4em;

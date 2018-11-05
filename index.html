@@ -15,9 +15,30 @@
 		<link rel="stylesheet" href="src/stylesheet.css">
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123752025-1"></script>
+<script type="text/javascript">
+	// handle links with @href started with '#' only
+	$(document).on('click', 'a[href^="#"]', function(e) {
+	    // target element id
+	    var id = $(this).attr('href');
+	
+	    // target element
+	    var $id = $(id);
+	    if ($id.length === 0) {
+	        return;
+	    }
+	
+	    // prevent standard hash navigation (avoid blinking in IE)
+	    e.preventDefault();
+	
+	    // top position relative to the document
+	    var pos = $id.offset().top;
+	
+	    // animated top scrolling
+	    $('body, html').animate({scrollTop: pos});
+	});
+</script>
 	</head>
 	<body>
-		
 		<div class="header-bar">
 			<p class="title">Tyler Pharand</p>
 			<div class="buttons-bar">
@@ -26,19 +47,19 @@
 			</div>
 		</div>
 		
-		<div class="container">
+		<!--<div class="container" id="Projects">
 			
 			<div>
 				<h1>Hey there,</h1>
 				<h2>Welcome to my portfolio.</h2>
-				<p class="header-description">I'm an electrical engineering grad with passions for graphic design and emerging technologies. I have interests in artificial intelligence, augmented-reality and blockchain. For more information on my education and experience, please visit the <a href="#AboutModal" class="color-button green-grad about" role="button"  data-toggle="modal">About Me</a> section.</p>
+				<p class="header-description">I'm an electrical engineering grad with passions for graphic design and emerging technologies. I have interests in artificial intelligence, augmented-reality and blockchain. For more information on my education and experience, please visit the <a class="purple" href="#About">About Me</a> section.</p>
 			</div>
 			
 			<hr>
 
 			<h4>Projects</h4>
 			
-			<!--item-->
+			<!--item--*>
 			<div class="panel panel-default">			  	
 			  	<div class="panel-heading">
 					<p class="panel-title">NAV X</p>
@@ -59,9 +80,9 @@
 					<a class="color-button purple-grad" href="https://github.com/tylerpharand/NAVX">View on Github</a>
 				</div>
 			</div>
-			<!--item-->
+			<!--item--*>
 			
-			<!--item-->
+			<!--item--*>
 			<div class="panel panel-default">			  	
 			  	<div class="panel-heading">
 					<p class="panel-title">Crypto Tracker</p>
@@ -82,9 +103,9 @@
 					<a class="color-button blue-grad" href="#">View in App Store</a>
 				</div>
 			</div>
-			<!--item-->
+			<!--item--*>
 			
-			<!--item-->
+			<!--item--*>
 			<div class="panel panel-default">			  	
 			  	<div class="panel-heading">
 					<p class="panel-title">Jellyphish</p>
@@ -104,9 +125,9 @@
 					<a class="color-button purple-grad" href="https://github.com/tylerpharand/Jellyphish">View on Github</a>
 				</div>
 			</div>
-			<!--item-->
+			<!--item--*>
 			
-			<!--item-->
+			<!--item--*>
 			<div class="panel panel-default">			  	
 			  	<div class="panel-heading">
 					<p class="panel-title">Discovr</p>
@@ -127,9 +148,9 @@
 					<a class="color-button blue-grad" href="https://devpost.com/software/discovr">View Project Page</a>
 				</div>
 			</div>
-			<!--item-->
+			<!--item--*>
 			
-			<!--item-->
+			<!--item--*>
 			<div class="panel panel-default">			  	
 			  	<div class="panel-heading">
 					<p class="panel-title">Carrots</p>
@@ -149,9 +170,9 @@
 					<a class="color-button purple-grad" href="https://github.com/tylerpharand/Carrots">View on Github</a>
 				</div>
 			</div>
-			<!--item-->
+			<!--item--*>
 			
-			<!--item-->
+			<!--item--*>
 			<div class="panel panel-default">			  	
 			  	<div class="panel-heading">
 					<p class="panel-title">Limelight</p>
@@ -172,37 +193,247 @@
 					<a class="color-button blue-grad" href="https://ramenrepo.github.io/">View Project Page</a>
 				</div>
 			</div>
-			<!--item-->
+			<!--item--*>
+		</div> <!--container--*>-->
+		<div class="container" id="About">
+			<h4>About Me</h4>
+			<!--<h6>Education</h6>
+				
+			<div class="about-item">
+				<div class="about-icon"><img src="src/img/lightning-icon.svg"></div>
+				<div class="about-description">
+					<h3>Bachelor of Electrical Engineering (Co-op)</h3>
+					<h5>McMaster University, Hamilton</h5>
+				</div>
+				<div class="date">
+					<h5>Spring 2018</h5>
+				</div>
+			</div>
+			
+			<hr>
+			
+			<h6>Work Experience</h6>
+			
+			<div class="about-item">
+				<div class="about-icon"><img src="src/img/honi-icon.svg"></div>
+				<div class="about-description">
+					<h3>Distribution Asset Management Intern</h3>
+					<h5>Hydro One Networks Inc., Toronto</h5>
+				</div>
+				<div class="date">
+					<h5>May 2016 – Aug 2017</h5>
+				</div>
+			</div>
+			
+			<div class="about-item">
+				<div class="about-icon"><img src="src/img/csc-icon.svg"></div>
+				<div class="about-description">
+					<h3>Customer Care Representitive</h3>
+					<h5>Contemporary Security Canada, Brampton</h5>
+				</div>
+				<div class="date">
+					<h5>Summer 2015</h5>
+				</div>
+			</div>
+			
+			<div class="about-item">
+				<div class="about-icon"><img src="src/img/irs-icon.svg"></div>
+				<div class="about-description">
+					<h3>Machine Operator</h3>
+					<h5>Ice River Springs Water Co., Feversham</h5>
+				</div>
+				<div class="date">
+					<h5>Summer 2014</h5>
+				</div>
+			</div>
+			
+			<hr>-->
+			
+			<h6>How I Rank My Expertise</h6>
+			<h5>Generally how I rate my skills in relation to each other</h5>
+			<div class="skill-container">
+				<div class="skill-column">
+					
+					<h3>Languages</h3>
+					
+					<div class="skill-item">
+						<h5>Python</h5>
+						<div class="skill-ranking">
+							<div class="skill-ranking-fill p100"></div>
+						</div>
+					</div>
+					<div class="skill-item">
+						<h5>VBA</h5>
+						<div class="skill-ranking">
+							<div class="skill-ranking-fill p90"></div>
+						</div>
+					</div>
+					<div class="skill-item">
+						<h5>Swift</h5>
+						<div class="skill-ranking">
+							<div class="skill-ranking-fill p70"></div>
+						</div>
+					</div>
+					<div class="skill-item">
+						<h5>Java</h5>
+						<div class="skill-ranking">
+							<div class="skill-ranking-fill p70"></div>
+						</div>
+					</div>
+					<div class="skill-item">
+						<h5>C++</h5>
+						<div class="skill-ranking">
+							<div class="skill-ranking-fill p50"></div>
+						</div>
+					</div>
+					
+					<h3>Libraries</h3>
+					
+					<div class="skill-item">
+						<h5>OpenCV</h5>
+						<div class="skill-ranking">
+							<div class="skill-ranking-fill p100"></div>
+						</div>
+					</div>
+					<div class="skill-item">
+						<h5>SKLearn</h5>
+						<div class="skill-ranking">
+							<div class="skill-ranking-fill p90"></div>
+						</div>
+					</div>
+					<div class="skill-item">
+						<h5>TensorFlow</h5>
+						<div class="skill-ranking">
+							<div class="skill-ranking-fill p70"></div>
+						</div>
+					</div>
+					<div class="skill-item">
+						<h5>Numpy</h5>
+						<div class="skill-ranking">
+							<div class="skill-ranking-fill p70"></div>
+						</div>
+					</div>
+					
+					<h3>Web</h3>
+					
+					<div class="skill-item">
+						<h5>HTML/CSS</h5>
+						<div class="skill-ranking">
+							<div class="skill-ranking-fill p100"></div>
+						</div>
+					</div>
+					<div class="skill-item">
+						<h5>JavaScript</h5>
+						<div class="skill-ranking">
+							<div class="skill-ranking-fill p90"></div>
+						</div>
+					</div>
+					<div class="skill-item">
+						<h5>Databases</h5>
+						<div class="skill-ranking">
+							<div class="skill-ranking-fill p70"></div>
+						</div>
+					</div>
+					<div class="skill-item">
+						<h5>PHP</h5>
+						<div class="skill-ranking">
+							<div class="skill-ranking-fill p70"></div>
+						</div>
+					</div>			
+				</div>
+				<div class="skill-column">
+					
+					<h3>Languages</h3>
+					
+					<div class="skill-item">
+						<h5>Python</h5>
+						<div class="skill-ranking">
+							<div class="skill-ranking-fill p100"></div>
+						</div>
+					</div>
+					<div class="skill-item">
+						<h5>VBA</h5>
+						<div class="skill-ranking">
+							<div class="skill-ranking-fill p90"></div>
+						</div>
+					</div>
+					<div class="skill-item">
+						<h5>Swift</h5>
+						<div class="skill-ranking">
+							<div class="skill-ranking-fill p70"></div>
+						</div>
+					</div>
+					<div class="skill-item">
+						<h5>Java</h5>
+						<div class="skill-ranking">
+							<div class="skill-ranking-fill p70"></div>
+						</div>
+					</div>
+					<div class="skill-item">
+						<h5>C++</h5>
+						<div class="skill-ranking">
+							<div class="skill-ranking-fill p50"></div>
+						</div>
+					</div>
+					
+					<h3>Libraries</h3>
+					
+					<div class="skill-item">
+						<h5>OpenCV</h5>
+						<div class="skill-ranking">
+							<div class="skill-ranking-fill p100"></div>
+						</div>
+					</div>
+					<div class="skill-item">
+						<h5>SKLearn</h5>
+						<div class="skill-ranking">
+							<div class="skill-ranking-fill p90"></div>
+						</div>
+					</div>
+					<div class="skill-item">
+						<h5>TensorFlow</h5>
+						<div class="skill-ranking">
+							<div class="skill-ranking-fill p70"></div>
+						</div>
+					</div>
+					<div class="skill-item">
+						<h5>Numpy</h5>
+						<div class="skill-ranking">
+							<div class="skill-ranking-fill p70"></div>
+						</div>
+					</div>
+					
+					<h3>Web</h3>
+					
+					<div class="skill-item">
+						<h5>HTML/CSS</h5>
+						<div class="skill-ranking">
+							<div class="skill-ranking-fill p100"></div>
+						</div>
+					</div>
+					<div class="skill-item">
+						<h5>JavaScript</h5>
+						<div class="skill-ranking">
+							<div class="skill-ranking-fill p90"></div>
+						</div>
+					</div>
+					<div class="skill-item">
+						<h5>Databases</h5>
+						<div class="skill-ranking">
+							<div class="skill-ranking-fill p70"></div>
+						</div>
+					</div>
+					<div class="skill-item">
+						<h5>PHP</h5>
+						<div class="skill-ranking">
+							<div class="skill-ranking-fill p70"></div>
+						</div>
+					</div>			
+				</div>
+			</div>
+			
 		</div> <!--container-->
-		
-		<!-- Modal HTML -->
-		<div id="AboutModal" class="modal fade">
-		    <div class="modal-dialog">
-		        <div class="modal-content">
-<!--		            <div class="modal-header">
-		            </div>-->
-		            <div class="modal-body">
-						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						<h1 class="modal-title" style="padding-bottom: 0em;">About</h1>
-						
-						<h4>Education</h4>
-						<h3><span class="glyphicon glyphicon-education" aria-hidden="true" style=""></span>Bachelor of Electrical Engineering</h3>
-						<p>McMaster University, <i>Hamilton, ON</i></p>
-						
-						<hr>
-						
-						<h4>Experience</h4>
-						<h3><span class="glyphicon glyphicon-flash" aria-hidden="true" style=""></span>Distribution Asset Management Intern</h3>
-						<p>Hydro One Networks Inc., <i>Toronto, ON</i></p>
-
-		            </div> <!--end modal body-->
-		            <div class="modal-footer">
-		                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-		            </div>
-		        </div>
-		    </div>
-		</div>
-
+		<div id="footer">Thanks for visiting!</div>
 	</body>
 </html>
 
