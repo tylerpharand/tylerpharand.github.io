@@ -126,6 +126,7 @@ div.skill-ranking-fill {
 .about-description {
 	padding-left: 1.2em;
 	width: 100%;
+	clear: none;
 }
 
 .about-description h3 {
@@ -580,6 +581,7 @@ h4 {
 	.date {
 		font-size: 0.8em;
 		padding-left: 1em;
+		display: table-cell;
 	}
 	
 	.about-icon {
