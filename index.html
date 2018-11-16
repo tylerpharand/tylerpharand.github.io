@@ -29,30 +29,39 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="src/stylesheet.css">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129354777-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123752025-1"></script>
-<script type="text/javascript">
-	// handle links with @href started with '#' only
-	$(document).on('click', 'a[href^="#"]', function(e) {
-	    // target element id
-	    var id = $(this).attr('href');
+		  gtag('config', 'UA-129354777-1');
+		</script>
+		<!-- Google Indexing -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123752025-1"></script>
+		<script type="text/javascript">
+			// handle links with @href started with '#' only
+			$(document).on('click', 'a[href^="#"]', function(e) {
+				// target element id
+				var id = $(this).attr('href');
 	
-	    // target element
-	    var $id = $(id);
-	    if ($id.length === 0) {
-	        return;
-	    }
+				// target element
+				var $id = $(id);
+				if ($id.length === 0) {
+					return;
+				}
 	
-	    // prevent standard hash navigation (avoid blinking in IE)
-	    e.preventDefault();
+				// prevent standard hash navigation (avoid blinking in IE)
+				e.preventDefault();
 	
-	    // top position relative to the document
-	    var pos = $id.offset().top;
+				// top position relative to the document
+				var pos = $id.offset().top;
 	
-	    // animated top scrolling
-	    $('body, html').animate({scrollTop: pos});
-	});
-</script>
+				// animated top scrolling
+				$('body, html').animate({scrollTop: pos});
+			});
+		</script>
 	</head>
 	<body>
 		<div class="header-bar">
