@@ -15,13 +15,20 @@
 		<meta property="og:title" content="Tyler Pharand | Portfolio">
 		<meta property="og:description" content="An engineering graduate with a passion for emerging tech.">
 		<meta property="og:image" content="">
-
-		<!-- Twitter -->
-		<meta property="twitter:card" content="summary_large_image">
-		<meta property="twitter:url" content="https://tylerpharand.github.io/">
-		<meta property="twitter:title" content="Tyler Pharand | Portfolio">
-		<meta property="twitter:description" content="An engineering graduate with a passion for emerging tech.">
-		<meta property="twitter:image" content="">
+		<!--<script src="src/lazysizes.min.js" async=""></script>-->
+		<script src="src/echo.js"></script>
+		<script>
+			echo.init({
+			offset: 100,
+			throttle: 250,
+			unload: false,
+			callback: function (element, op) {
+			console.log(element, 'has been', op + 'ed')
+			}
+			});
+			
+			// echo.render(); is also available for non-scroll callbacks
+		</script>
 		<script
 		  src="https://code.jquery.com/jquery-2.2.4.min.js"
 		  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
@@ -93,7 +100,7 @@
 				
 			    <div class="panel-body">
 					<div class="pickgradient">
-						<img class="thumbnail" src="src/img/navx_thumbnail.gif">
+						<img class="thumbnail" src="src/img/navx_thumbnail-p.jpg" alt="Photo" data-echo="src/img/navx_thumbnail.gif"/>
 					</div> 
 					<p class="description">Final year engineering project. Used data from Google Maps API, along with sensory and video data, to highlight the route to the destination. Awarded 2nd place in Electrical Engineering.</p>
 				</div>
@@ -116,7 +123,7 @@
 				
 			    <div class="panel-body">
 					<div class="pickgradient">
-						<img class="thumbnail" src="src/img/cryptotracker_thumbnail.jpg">
+						<img class="thumbnail" src="src/img/cryptotracker_thumbnail.jpg"/>
 					</div> 
 					<p class="description">App for tracking the price of various cryptocurrencies. Ability to add and remove items from watchlist. Adjustable timeframe and base currency. Data is fetched from the CryptoCompare API.</p>
 				</div>
@@ -139,7 +146,7 @@
 				
 			    <div class="panel-body">
 					<div class="pickgradient">
-						<img class="thumbnail" src="src/img/jellyphish_thumbnail.jpg">
+						<img class="thumbnail" src="src/img/jellyphish_thumbnail.jpg"/>
 					</div> 
 					<p class="description">Template for flooding phishing websites with fake data. Pollutes the scammers’ database with fake emails, credit card numbers, and passwords. Goal is to make any successful phishing attempts harder to identify.</p>
 				</div>
@@ -161,7 +168,7 @@
 				
 			    <div class="panel-body">
 					<div class="pickgradient">
-						<img class="thumbnail" src="src/img/discovr_thumbnail.jpg">
+						<img class="thumbnail" src="src/img/discovr_thumbnail.jpg"/>
 					</div> 
 					<p class="description">Created during YHack 2015, a weekend Hackathon. Discovr is a Tinder-esque interface for finding travel destinations.
 					The interface is swipe-based, and displays relevant flight data.</p>
@@ -184,7 +191,7 @@
 				
 			    <div class="panel-body">
 					<div class="pickgradient">
-						<img class="thumbnail" src="src/img/carrots_thumbnail.jpg">
+						<img class="thumbnail" src="src/img/carrots_thumbnail.jpg"/>
 					</div> 
 					<p class="description">Program which exploits a vulnerability in a step tracking API at regular intervals. Deployed as a Heroku dyno. Updates account’s step-count to meet daily goal.</p>
 				</div>
@@ -206,7 +213,7 @@
 				
 			    <div class="panel-body">
 					<div class="pickgradient">
-						<img class="thumbnail" src="src/img/limelight_thumbnail.jpg">
+						<img class="thumbnail" src="src/img/limelight_thumbnail.jpg"/>
 					</div> 
 					<p class="description">Theme for jailbroken iOS devices. Received approximately 700 downloads within the first three weeks of launch. Theme contains ~650 icons in total, the majority of which are user requests.</p>
 				</div>
@@ -225,7 +232,7 @@
 			<h6>Education</h6>
 				
 			<div class="about-item">
-				<div class="about-icon"><img src="src/img/lightning-icon.svg"></div>
+				<div class="about-icon"><img src="src/img/lightning-icon.svg"/></div>
 				<div class="about-description">
 					<h3>Bachelor of Electrical Engineering (Co-op)</h3>
 					<h5>McMaster University, Hamilton</h5>
@@ -239,7 +246,7 @@
 			
 			<h6>Work Experience</h6>
 			<div class="about-item">
-				<div class="about-icon"><img src="src/img/dc-icon.svg"></div>
+				<div class="about-icon"><img src="src/img/dc-icon.svg"/></div>
 				<div class="about-description">
 					<h3>Computer Vision and Deep Learning Engineer</h3>
 					<h5>Deep Curve Inc., Toronto</h5>
@@ -250,7 +257,7 @@
 			</div>
 
 			<div class="about-item">
-				<div class="about-icon"><img src="src/img/honi-icon.svg"></div>
+				<div class="about-icon"><img src="src/img/honi-icon.svg"/></div>
 				<div class="about-description">
 					<h3>Distribution Asset Management Intern</h3>
 					<h5>Hydro One Networks Inc., Toronto</h5>
@@ -261,7 +268,7 @@
 			</div>
 			
 			<div class="about-item">
-				<div class="about-icon"><img src="src/img/csc-icon.svg"></div>
+				<div class="about-icon"><img src="src/img/csc-icon.svg"/></div>
 				<div class="about-description">
 					<h3>Customer Care Representative</h3>
 					<h5>Contemporary Security Canada, Brampton</h5>
@@ -272,7 +279,7 @@
 			</div>
 			
 			<div class="about-item">
-				<div class="about-icon"><img src="src/img/irs-icon.svg"></div>
+				<div class="about-icon"><img src="src/img/irs-icon.svg"/></div>
 				<div class="about-description">
 					<h3>Machine Operator</h3>
 					<h5>Ice River Springs Water Co., Feversham</h5>
