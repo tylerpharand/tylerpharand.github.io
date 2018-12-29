@@ -1,7 +1,7 @@
 {
   "main.css": "/construct/static/css/main.fd6782ef.chunk.css",
-  "main.js": "/construct/static/js/main.9c6febb6.chunk.js",
-  "main.js.map": "/construct/static/js/main.9c6febb6.chunk.js.map",
+  "main.js": "/construct/static/js/main.af03d0f5.chunk.js",
+  "main.js.map": "/construct/static/js/main.af03d0f5.chunk.js.map",
   "static/js/1.26c9ce4a.chunk.js": "/construct/static/js/1.26c9ce4a.chunk.js",
   "static/js/1.26c9ce4a.chunk.js.map": "/construct/static/js/1.26c9ce4a.chunk.js.map",
   "runtime~main.js": "/construct/static/js/runtime~main.29056d05.js",
@@ -21,6 +21,6 @@
   "static/media/trash-icon.svg": "/construct/static/media/trash-icon.b8c4771c.svg",
   "static/css/main.fd6782ef.chunk.css.map": "/construct/static/css/main.fd6782ef.chunk.css.map",
   "index.html": "/construct/index.html",
-  "precache-manifest.11b9d0460c249327b603353f2e0c7983.js": "/construct/precache-manifest.11b9d0460c249327b603353f2e0c7983.js",
+  "precache-manifest.bd5836c7b2f16eddefb5eff1a831dc66.js": "/construct/precache-manifest.bd5836c7b2f16eddefb5eff1a831dc66.js",
   "service-worker.js": "/construct/service-worker.js"
 }
