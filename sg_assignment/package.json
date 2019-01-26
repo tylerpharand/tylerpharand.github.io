@@ -1,0 +1,18 @@
+{
+  "name": "tween_eg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tyler Pharand",
+  "license": "ISC",
+  "dependencies": {
+    "pixi-display": "^1.1.1",
+    "pixi-particles": "^3.1.0",
+    "pixi-timer": "^1.0.1",
+    "pixi-tween": "^0.2.0",
+    "pixi.js": "^4.8.5"
+  }
+}
