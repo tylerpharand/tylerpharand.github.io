@@ -1,0 +1,6 @@
+User-agent: Googlebot-Image
+Disallow: /src/img/lightning-icon.svg
+Disallow: /src/img/irs-icon.svg
+Disallow: /src/img/honi-icon.svg
+Disallow: /src/img/dc-icon.svg
+Disallow: /src/img/csc-icon.svg
