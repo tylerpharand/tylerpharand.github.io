@@ -26,7 +26,7 @@
 			console.log(element, 'has been', op + 'ed')
 			}
 			});
-			
+
 			// echo.render(); is also available for non-scroll callbacks
 		</script>
 		<script
@@ -52,19 +52,19 @@
 			$(document).on('click', 'a[href^="#"]', function(e) {
 				// target element id
 				var id = $(this).attr('href');
-	
+
 				// target element
 				var $id = $(id);
 				if ($id.length === 0) {
 					return;
 				}
-	
+
 				// prevent standard hash navigation (avoid blinking in IE)
 				e.preventDefault();
-	
+
 				// top position relative to the document
 				var pos = $id.offset().top;
-	
+
 				// animated top scrolling
 				$('body, html').animate({scrollTop: pos});
 			});
@@ -78,33 +78,33 @@
 				<a class="header-buttons blue-grad" href="https://www.linkedin.com/in/tylerpharand/">LinkedIn</a>
 			</div>
 		</div>
-		
+
 		<div class="container" id="Projects">
-			
+
 			<div>
 				<h1>👋 Hey there</h1>
 				<h2>Welcome to my portfolio.</h2>
-				<p class="header-description">I'm software developer with passions for graphic design and emerging technologies. I have interests in AI and image processing. For more information on my education and experience, please visit the <a class="purple" href="#About">About Me</a> section.</p>
+				<p class="header-description">My name is Tyler. I'm a software developer with interests ranging from computer vision to graphic design. For information on my  work experience and education, please visit the <a class="purple" href="#About">About Me</a> section. Some of my favourite projects are listed below:</p>
 			</div>
-			
+
 			<hr>
 
 			<h4>Projects</h4>
-			
+
 			<!--item-->
-			<div class="panel panel-default">			  	
+			<div class="panel panel-default">
 			  	<div class="panel-heading">
 					<p class="panel-title">NAV X</p>
 					<p class="panel-subtitle">Augmented-Reality GPS Navigation</p>
 				</div>
-				
+
 			    <div class="panel-body">
 					<div class="pickgradient">
 						<img class="thumbnail" src="src/img/navx_thumbnail-p.jpg" alt="Photo" data-echo="src/img/navx_thumbnail.gif"/>
-					</div> 
-					<p class="description">Final year engineering project. Data from the Google Maps API, along with sensory and video data were used to highlight the route to the destination in realtime. Awarded 2nd place in Electrical Engineering.</p>
+					</div>
+					<p class="description">Final year engineering project. Data from the Google Maps API, along with sensory and video data were used to highlight the route to the destination in realtime. Awarded 2nd place, Electrical Engineering.</p>
 				</div>
-				
+
 				<div class="panel-footer">
 					<p class="tag python">Python</p>
 					<p class="tag opencv">OpenCV</p>
@@ -115,19 +115,19 @@
 			<!--item-->
 
 			<!--item-->
-			<div class="panel panel-default">			  	
+			<div class="panel panel-default">
 			  	<div class="panel-heading">
 					<p class="panel-title">GIFME</p>
-					<p class="panel-subtitle">AI + GIFs + You</p>
+					<p class="panel-subtitle">AI, GIFs and You</p>
 				</div>
-				
+
 			    <div class="panel-body">
 					<div class="pickgradient">
 						<img class="thumbnail" src="src/img/gifme_thumbnail.jpg" alt="Photo"/>
-					</div> 
-					<p class="description">Companion app for Snapchat. Generate animated GIFs of yourself using a semantic segmentation model. GIFs can be passed into Snapchat or used in messaging applications.</p>
+					</div>
+					<p class="description">Companion app for Snapchat. Generate animated GIFs of people using a semantic segmentation model. GIFs can be exported to Snapchat or used in messaging applications.</p>
 				</div>
-				
+
 				<div class="panel-footer">
 					<p class="tag ios">iOS</p>
 					<p class="tag swift">Swift</p>
@@ -136,21 +136,21 @@
 				</div>
 			</div>
 			<!--item-->
-			
+
 			<!--item-->
-			<div class="panel panel-default">			  	
+			<div class="panel panel-default">
 			  	<div class="panel-heading">
 					<p class="panel-title">Crypto Tracker</p>
 					<p class="panel-subtitle">Cryptocurrency Tracker</p>
 				</div>
-				
+
 			    <div class="panel-body">
 					<div class="pickgradient">
 						<img class="thumbnail" src="src/img/cryptotracker_thumbnail.jpg"/>
-					</div> 
+					</div>
 					<p class="description">iOS app for tracking the price of various cryptocurrencies. Ability to add and remove items from watchlist. Adjustable timeframe and base currency. Data is fetched from the CryptoCompare API.</p>
 				</div>
-				
+
 				<div class="panel-footer">
 					<p class="tag ios">iOS</p>
 					<p class="tag swift">Swift</p>
@@ -159,21 +159,21 @@
 				</div>
 			</div>
 			<!--item-->
-			
+
 			<!--item-->
-			<div class="panel panel-default">			  	
+			<div class="panel panel-default">
 			  	<div class="panel-heading">
 					<p class="panel-title">Keras Constructor</p>
 					<p class="panel-subtitle">Build Models for Deep Learning</p>
 				</div>
-				
+
 			    <div class="panel-body">
 					<div class="pickgradient">
 						<img class="thumbnail" src="src/img/construct_thumbnail-p.jpg" alt="Photo" data-echo="src/img/construct_thumbnail.gif"/>
-					</div> 
+					</div>
 					<p class="description">A visual interface for designing models for Keras. The web app outputs Python code for use in your project.</p>
 				</div>
-				
+
 				<div class="panel-footer">
 					<p class="tag ios">React</p>
 					<p class="tag htmlcss">HTML/CSS</p>
@@ -182,21 +182,21 @@
 				</div>
 			</div>
 			<!--item-->
-			
+
 			<!--item-->
-			<div class="panel panel-default">			  	
+			<div class="panel panel-default">
 			  	<div class="panel-heading">
 					<p class="panel-title">Limelight</p>
 					<p class="panel-subtitle">iOS Theme</p>
 				</div>
-				
+
 			    <div class="panel-body">
 					<div class="pickgradient">
 						<img class="thumbnail" src="src/img/limelight_thumbnail.jpg"/>
-					</div> 
+					</div>
 					<p class="description">A free theme for jailbroken iOS devices. Received ~20k downloads since launch. The theme contains ~650 icons in total, the majority of which are user requests.</p>
 				</div>
-				
+
 				<div class="panel-footer">
 					<p class="tag ios">iOS</p>
 					<p class="tag jailbreak">Jailbreak</p>
@@ -209,130 +209,186 @@
 		<div class="container" id="About">
 			<h4>About Me</h4>
 			<h6>Work Experience</h6>
-			<div class="about-item">
-				<div class="about-icon"><img src="src/img/dc-icon.svg"/></div>
-				<div class="about-description">
-					<h3>Software Developer in Research</h3>
-					<h5>Sensibill Inc., Toronto</h5>
-				</div>
-				<div class="date">
-					<h5>Present</h5>
-				</div>
-			</div>
 
 			<div class="about-item">
-				<div class="about-icon"><img src="src/img/honi-icon.svg"/></div>
-				<div class="about-description">
-					<h3>Asset Management Intern</h3>
-					<h5>Hydro One Networks Inc., Toronto</h5>
+					<div class="about-icon"><img src="src/img/dc-icon.svg"/></div>
+					<div class="about-body">
+					<div class="about-header">
+					<div class="about-description">
+						<h3>Software Developer</h3>
+						<h5>Sensibill Inc., Toronto</h5>
+					</div>
+					<div class="date">
+						<h5>April 2019 - April 2020</h5>
+					</div>
 				</div>
-				<div class="date">
-					<h5>May 2016 – Aug 2017</h5>
-				</div>
+					<ul>
+						<li>Improved the accuracy of our AI engine in extracting data from pictures of paper receipts. Wrote and maintained algorithms which processed the outputs of our neural network and OCR engines.</li>
+						<li>Trained ML model for text detection. Aided in research to build an in-house OCR service.</li>
+						<li>Developed a REST wrapper around our extraction engine and dockerized. Converted engine into autoscaling microservice and deployed to AWS using Infrastructure as Code.</li>
+						<li>Developed the front-end of a web application for building datasets, using React and Meteor. Additionally, developed back-end scripts for aggregating and storing data in Postgres and S3.</li>
+					</ul>
 			</div>
-	
-			<h5>More detail regarding these roles can be found on my <a href="https://www.linkedin.com/in/tylerpharand/" class="blue">LinkedIn</a> profile.</h5>
-			
+			</div>
+
 			<hr>
 
 			<h6>Education</h6>
-				
+
 			<div class="about-item">
-				<div class="about-icon"><img src="src/img/lightning-icon.svg"/></div>
-				<div class="about-description">
-					<h3>Bachelor of Electrical Engineering (Co-op)</h3>
-					<h5>McMaster University, Hamilton</h5>
+					<div class="about-icon"><img src="src/img/dc-icon.svg"/></div>
+					<div class="about-body">
+					<div class="about-header">
+					<div class="about-description">
+						<h3>Bachelor of Engineering, Electrical</h3>
+						<h5>McMaster University, Toronto</h5>
+					</div>
+					<div class="date">
+						<h5>June 2018</h5>
+					</div>
 				</div>
-				<div class="date">
-					<h5>Spring 2018</h5>
-				</div>
+					<ul>
+						<li>Capstone - 2nd Place, Electrical Engineering.</li>
+						<li>Specialized in image processing and power generation.</li>
+					</ul>
 			</div>
-			
+			</div>
 			<hr>
-			
+
 			<h6>How I Rank My Expertise</h6>
 			<h5>Generally how I rank my skills in relation to each other</h5>
 			<div class="skill-container">
 				<div class="skill-column">
-					
+
 					<h3>Languages</h3>
+			    <div class="skill-item">
+			      <h5>Node.js</h5>
+			      <div class="skill-ranking">
+			        <div class="skill-ranking-fill p100"></div>
+			      </div>
+			    </div>
+			    <div class="skill-item">
+			      <h5>Python</h5>
+			      <div class="skill-ranking">
+			        <div class="skill-ranking-fill p70"></div>
+			      </div>
+			    </div>
+			    <div class="skill-item">
+			      <h5>Swift</h5>
+			      <div class="skill-ranking">
+			        <div class="skill-ranking-fill p40"></div>
+			      </div>
+			    </div>
+			    <div class="skill-item">
+			      <h5>Java</h5>
+			      <div class="skill-ranking">
+			        <div class="skill-ranking-fill p30"></div>
+			      </div>
+			    </div>
+
+					<h3>Web Frameworks</h3>
+
 					<div class="skill-item">
-						<h5>JavaScript</h5>
+						<h5>React</h5>
+						<div class="skill-ranking">
+							<div class="skill-ranking-fill p80"></div>
+						</div>
+					</div>
+					<div class="skill-item">
+						<h5>Express</h5>
 						<div class="skill-ranking">
 							<div class="skill-ranking-fill p100"></div>
 						</div>
 					</div>
-					<div class="skill-item">
-						<h5>Python</h5>
-						<div class="skill-ranking">
-							<div class="skill-ranking-fill p90"></div>
-						</div>
-					</div>
-					<div class="skill-item">
-						<h5>Swift</h5>
-						<div class="skill-ranking">
-							<div class="skill-ranking-fill p60"></div>
-						</div>
-					</div>
-					<div class="skill-item">
-						<h5>Java</h5>
-						<div class="skill-ranking">
-							<div class="skill-ranking-fill p60"></div>
-						</div>
-					</div>
-					
-					<h3>Libraries/APIs</h3>
-					
+
+					<h3>AI/Image Processing</h3>
+
 					<div class="skill-item">
 						<h5>OpenCV</h5>
 						<div class="skill-ranking">
-							<div class="skill-ranking-fill p90"></div>
+							<div class="skill-ranking-fill p80"></div>
 						</div>
 					</div>
+
 					<div class="skill-item">
-						<h5>SKLearn</h5>
+						<h5>ImageMagick</h5>
 						<div class="skill-ranking">
-							<div class="skill-ranking-fill p60"></div>
+							<div class="skill-ranking-fill p70"></div>
 						</div>
 					</div>
+
 					<div class="skill-item">
 						<h5>Keras</h5>
 						<div class="skill-ranking">
-							<div class="skill-ranking-fill p40"></div>
+							<div class="skill-ranking-fill p50"></div>
 						</div>
 					</div>
+
 					<div class="skill-item">
 						<h5>TensorFlow</h5>
 						<div class="skill-ranking">
 							<div class="skill-ranking-fill p40"></div>
 						</div>
 					</div>
+
 				</div>
-				
+
 				<div class="skill-column">
-				
-				<h3>Web</h3>
-					<div class="skill-item">
-						<h5>React</h5>
-						<div class="skill-ranking">
-							<div class="skill-ranking-fill p80"></div>
-						</div>
-					</div>			
-					<div class="skill-item">
-						<h5>HTML/CSS</h5>
-						<div class="skill-ranking">
-							<div class="skill-ranking-fill p90"></div>
-						</div>
+
+				<h3>Backend</h3>
+				<div class="skill-item">
+					<h5>AWS</h5>
+					<div class="skill-ranking">
+						<div class="skill-ranking-fill p90"></div>
 					</div>
-					<div class="skill-item">
-						<h5>MongoDB</h5>
-						<div class="skill-ranking">
-							<div class="skill-ranking-fill p80"></div>
-						</div>
+				</div>
+
+				<div class="skill-item">
+					<h5>CDK</h5>
+					<div class="skill-ranking">
+						<div class="skill-ranking-fill p100"></div>
 					</div>
+				</div>
+
+				<div class="skill-item">
+					<h5>MongoDB</h5>
+					<div class="skill-ranking">
+						<div class="skill-ranking-fill p90"></div>
+					</div>
+				</div>
+
+				<div class="skill-item">
+					<h5>PostgreSQL</h5>
+					<div class="skill-ranking">
+						<div class="skill-ranking-fill p50"></div>
+					</div>
+				</div>
+
+				<h3>Misc</h3>
+				<div class="skill-item">
+					<h5>Git</h5>
+					<div class="skill-ranking">
+						<div class="skill-ranking-fill p100"></div>
+					</div>
+				</div>
+
+				<div class="skill-item">
+					<h5>Docker</h5>
+					<div class="skill-ranking">
+						<div class="skill-ranking-fill p90"></div>
+					</div>
+				</div>
+
+				<div class="skill-item">
+					<h5>Bash</h5>
+					<div class="skill-ranking">
+						<div class="skill-ranking-fill p90"></div>
+					</div>
+				</div>
+
 
 					<h3>Graphics</h3>
-					
+
 					<div class="skill-item">
 						<h5>Photoshop</h5>
 						<div class="skill-ranking">
@@ -357,34 +413,13 @@
 							<div class="skill-ranking-fill p70"></div>
 						</div>
 					</div>
-					<div class="skill-item">
-						<h5>Video Editing</h5>
-						<div class="skill-ranking">
-							<div class="skill-ranking-fill p100"></div>
-						</div>
-					</div>			
 				</div>
 			</div>
-			
 			<div id="footer">
-				<hr>
-				<p><i>I am always searching for new opportunities to grow as a professional and make positive contributions to society. Feel free to reach out to me regarding anything.</i><br>
-				<p style="width: 100%; text-align: right;">- Tyler</p>
-			</p>
+			<hr>
 			<center><a href="#top" class="purple">Back to top</a></center>
-			
+
 		</div> <!--container-->
-		
+
 	</body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
