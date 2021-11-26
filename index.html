@@ -82,14 +82,35 @@
 		<div class="container" id="Projects">
 
 			<div>
-				<h1>👋 Hey there</h1>
-				<h2>Welcome to my portfolio.</h2>
-				<p class="header-description">My name is Tyler. I'm a software developer with interests ranging from computer vision to graphic design. For information on my  work experience and education, please visit the <a class="purple" href="#About">About Me</a> section. Some of my favourite projects are listed below:</p>
+				<h1>Hey there 👋</h1>
+				<p class="header-description">My name is Tyler. I'm a developer with interests ranging from computer vision to graphic design. For my experience and education, visit the <a class="purple" href="#About">About Me</a> section. Some of my favourite projects are listed below</p>
 			</div>
 
 			<hr>
 
 			<h4>Projects</h4>
+
+			<!--item-->
+			<div class="panel panel-default">
+			  <div class="panel-heading">
+					<p class="panel-title">VaxBot</p>
+					<p class="panel-subtitle">Twitter Bot</p>
+				</div>
+
+			    <div class="panel-body">
+					<div class="pickgradient">
+						<img class="thumbnail" src="src/img/vaxbot_thumbnail.jpg"/>
+					</div>
+					<p class="description">A Twitter bot which notified users when vaccine popups appeared in their postal area. Helped ~1800 people get the jab.</p>
+				</div>
+
+				<div class="panel-footer">
+					<p class="tag ios">Node</p>
+					<a class="color-button purple-grad" href="https://github.com/tylerpharand/vaxbot">Github</a>
+					<a class="color-button blue-grad" href="https://twitter.com/vaxhunterbot">View on Twitter</a>
+				</div>
+			</div>
+			<!--item-->
 
 			<!--item-->
 			<div class="panel panel-default">
@@ -109,7 +130,7 @@
 					<p class="tag python">Python</p>
 					<p class="tag opencv">OpenCV</p>
 					<p class="tag arduino">Arduino</p>
-					<a class="color-button purple-grad" href="https://github.com/tylerpharand/NAVX">View on Github</a>
+					<a class="color-button purple-grad" href="https://github.com/tylerpharand/NAVX">Github</a>
 				</div>
 			</div>
 			<!--item-->
@@ -131,7 +152,7 @@
 				<div class="panel-footer">
 					<p class="tag ios">iOS</p>
 					<p class="tag swift">Swift</p>
-					<a class="color-button purple-grad" href="https://github.com/tylerpharand/GIFME">View on Github</a>
+					<a class="color-button purple-grad" href="https://github.com/tylerpharand/GIFME">Github</a>
 					<a class="color-button blue-grad" href="https://tylerpharand.github.io/gifme/gifme_demo.mp4">View Demo</a>
 				</div>
 			</div>
@@ -154,7 +175,7 @@
 				<div class="panel-footer">
 					<p class="tag ios">iOS</p>
 					<p class="tag swift">Swift</p>
-					<a class="color-button purple-grad" href="https://github.com/tylerpharand/CryptoTracker">View on Github</a>
+					<a class="color-button purple-grad" href="https://github.com/tylerpharand/CryptoTracker">Github</a>
 					<!--<a class="color-button blue-grad" href="#">View in App Store</a>-->
 				</div>
 			</div>
@@ -177,7 +198,7 @@
 				<div class="panel-footer">
 					<p class="tag ios">React</p>
 					<p class="tag htmlcss">HTML/CSS</p>
-					<a class="color-button purple-grad" href="https://github.com/tylerpharand/construct">View on Github</a>
+					<a class="color-button purple-grad" href="https://github.com/tylerpharand/construct">Github</a>
 					<a class="color-button blue-grad" href="https://tylerpharand.github.io/construct/index.html">View Demo</a>
 				</div>
 			</div>
@@ -235,24 +256,43 @@
 			<h6>Work Experience</h6>
 
 			<div class="about-item">
-					<div class="about-icon"><img src="src/img/dc-icon.svg"/></div>
 					<div class="about-body">
 					<div class="about-header">
 					<div class="about-description">
 						<h3>Software Developer</h3>
-						<h5>Sensibill Inc., Toronto</h5>
+						<h5>Stage TEN, Toronto</h5>
+					</div>
+					<div class="date">
+						<h5>April 2020 - Present</h5>
+					</div>
+				</div>
+				<ul>
+					<li>Designed and developed GraphQL APIs which drive the interactive plugins on our live streaming platform (ie. chat, voting, e-commerce). Worked alongside frontend developers to integrate with said APIs on our web clients.</li>
+					<li>Pitched a redesign of our e-commerce product to improve usability and simplify the technical implementation. Spearheaded this initiative and developed the necessary backend to support the redesign.</li>
+					<li>Integrated with various third-party APIs (ie. Shopify, PubNub, Stripe) to further the development of our product.</li>
+				</ul>
+				</div>
+			</div>
+			<br/>
+
+			<div class="about-item">
+					<div class="about-body">
+					<div class="about-header">
+					<div class="about-description">
+						<h3>Software Developer</h3>
+						<h5>Sensibill, Toronto</h5>
 					</div>
 					<div class="date">
 						<h5>April 2019 - April 2020</h5>
 					</div>
 				</div>
-					<ul>
-						<li>Improved the accuracy of our AI engine in extracting data from pictures of paper receipts. Wrote and maintained algorithms which processed the outputs of our neural network and OCR engines.</li>
-						<li>Trained ML model for text detection. Aided in research to build an in-house OCR service.</li>
-						<li>Developed a REST wrapper around our extraction engine and dockerized. Converted engine into autoscaling microservice and deployed to AWS using Infrastructure as Code.</li>
-						<li>Developed the front-end of a web application for building datasets, using React and Meteor. Additionally, developed back-end scripts for aggregating and storing data in Postgres and S3.</li>
-					</ul>
-			</div>
+				<ul>
+					<li>Improved the accuracy of our AI engine by developing and maintaining the algorithms which process outputs of our neural network and OCR engines.</li>
+					<li>Developed a tool for measuring the engine’s accuracy on data sampled from production. This also allowed for creation of datasets in various languages and regions.</li>
+					<li>Developed an API for our extraction engine and dockerized it. Turned the engine into an autoscaling microservice deployed on AWS using Infrastructure as Code.</li>
+					<li>Trained an ML model for text detection as research for building an in-house OCR service.</li>
+				</ul>
+				</div>
 			</div>
 
 			<hr>
@@ -260,7 +300,6 @@
 			<h6>Education</h6>
 
 			<div class="about-item">
-					<div class="about-icon"><img src="src/img/dc-icon.svg"/></div>
 					<div class="about-body">
 					<div class="about-header">
 					<div class="about-description">
@@ -268,18 +307,17 @@
 						<h5>McMaster University, Toronto</h5>
 					</div>
 					<div class="date">
-						<h5>June 2018</h5>
+						<h5>2018</h5>
 					</div>
 				</div>
 					<ul>
+						<li>Focus on signal processing and power generation.</li>
 						<li>Capstone - 2nd Place, Electrical Engineering.</li>
-						<li>Specialized in image processing and power generation.</li>
 					</ul>
 			</div>
 			</div>
 
 			<div id="footer">
-			<hr>
 			<center><a href="#top" class="purple">Back to top</a></center>
 
 		</div> <!--container-->
